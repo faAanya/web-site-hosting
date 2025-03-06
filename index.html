@@ -4,12 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sport | Магазин спортивных товаров с доставкой 🏋️‍♂️</title>
+    <title>Super Sport | Магазин спортивных товаров с доставкой 🏋️‍♂️</title>
+    <meta property="og:title" content="Спортивный магазин">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jestertin-vzea8v.stormkit.dev/">
+    <meta property="og:image" content="https://jestertin-vzea8v.stormkit.dev//logo.png">
+    <meta property="og:description"
+        content="Достигните своих фитнес-целей с опытными персональными тренерами нашего клуба. Индивидуальные программы тренировок и питание под вашим контролем!">
+    <meta property="og:site_name" content="Супер Спорт">
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:description" content=" Фирменный нтернет-магазин спортивного инвентаря в Минске Супер Спорт для постоянных покупателей предлагает гибкую систему скидок, поэтому купить спортивный инвентарь в Минске можно еще выгоднее! К каждому покупателю предусмотрен индивидуальный подход с предоставлением бесплатных консультаций по подбору высоты тренажера.
+" />
+
     <meta name="description"
         content="✅ Спортивные товары премиум-класса со скидками до 50%! Бесплатная доставка, гарантия качества, 300+ брендов. Фитнес-оборудование, экипировка, аксессуары для спорта">
     <meta name="keywords"
         content="купить спортивные товары, спортивные товары Минск, фитнес оборудование, спортивная экипировка, тренажеры для дома, кроссовки, спортивное питание">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link rel="canonical" href="https://jestertin-vzea8v.stormkit.dev/">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="author" content="Super Sport">
+    <meta name="geo.region" content="BY-MI">
+    <meta name="geo.placename" content="Минск">
+    <meta name="language" content="Russian">
+    <meta name="city" content="Минск">
+    <meta name="country" content="Беларусь">
+
     <style>
         :root {
             --main-color: #FF6B6B;
@@ -114,14 +135,121 @@
                 padding: 2rem 1rem;
             }
         }
+
+        .nav-links {
+            margin: 1rem 0;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            border-bottom: 2px solid transparent;
+            transition: all 0.3s;
+        }
+
+        .nav-links a:hover {
+            border-color: var(--main-color);
+        }
+
+        footer {
+            background: var(--dark-color);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .footer-links {
+            margin: 1rem 0;
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: #ddd;
+            text-decoration: none;
+        }
+
+        .feedback-section {
+            padding: 4rem 1rem;
+            background: var(--light-bg);
+        }
+
+        .feedback-container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .feedback-section h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: var(--dark-color);
+        }
+
+        .feedback-section form {
+            display: grid;
+            gap: 1.5rem;
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--dark-color);
+        }
+
+        .feedback-section input,
+        .feedback-section textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .feedback-section input:focus,
+        .feedback-section textarea:focus {
+            outline: 2px solid var(--main-color);
+            border-color: transparent;
+        }
+
+        @media (max-width: 480px) {
+            .feedback-section {
+                padding: 2rem 1rem;
+            }
+
+            .feedback-section form {
+                padding: 1.5rem;
+            }
+        }
     </style>
 </head>
 
 <body>
     <header class="header">
+        <div style="display:none;">
+            <h1>Интернет-магазин спортивных товаров Super Sport Минск</h1>
+            <p>Спорттовары для фитнеса, единоборств, кроссфита с доставкой по Беларуси</p>
+        </div>
         <h1>SPORT - Ваш фитнес-партнер №1</h1>
         <p>Более 10 000 товаров для профессионального спорта и домашних тренировок</p>
+        <nav class="nav-links">
+            <a href="#products">Новинки</a>
+            <a href="#advantages">Преимущества</a>
+            <a href="#reasons">Почему мы</a>
+            <a href="/garantiya.html" title="Условия гарантии">Гарантия</a>
+        </nav>
+
         <a href="#products" class="cta-button">Смотреть новинки →</a>
+
+        <h2 aria-hidden="true">SPORT - Ваш фитнес-партнер №1</h2>
     </header>
 
     <section class="features">
@@ -138,6 +266,58 @@
     </section>
 
     <main class="products-grid" id="products">
+
+        <article class="product-card">
+            <img src="images/kross.png" alt="Кроссовки для кроссфита Nike Metcon 8" class="product-image">
+            <div class="product-info">
+                <h2>Кроссовки для функционального тренинга</h2>
+                <p>Профессиональная обувь для кроссфита и HIIT-тренировок</p>
+                <ul>
+                    <li>✅ Усиленная подошва для плиометрики</li>
+                    <li>✅ Дышащий материал Hyperweave</li>
+                    <li>✅ Анатомическая стелька с поддержкой свода</li>
+                </ul>
+            </div>
+        </article>
+
+        <article class="product-card">
+            <img src="images/eda.png" alt="Комплекс спортивного питания Optimum Nutrition" class="product-image">
+            <div class="product-info">
+                <h2>Спортивное питание Premium</h2>
+                <p>Набор для набора мышечной массы и восстановления</p>
+                <ul>
+                    <li>⚡ Сывороточный протеин Gold Standard</li>
+                    <li>⚡ BCAA 2:1:1 с L-глютамином</li>
+                    <li>⚡ Пробоотборник в подарок</li>
+                </ul>
+            </div>
+        </article>
+
+        <article class="product-card">
+            <img src="images/kover.png" alt="Экологичный йога-коврик Manduka PRO" class="product-image">
+            <div class="product-info">
+                <h2>Йога-коврик премиум класса</h2>
+                <p>Антискользящее покрытие для профессиональной практики</p>
+                <ul>
+                    <li>🧘 Высокая плотность 6 мм</li>
+                    <li>🌱 Экоматериалы - натуральный каучук</li>
+                    <li>💧 Влагостойкая поверхность</li>
+                </ul>
+            </div>
+        </article>
+
+        <article class="product-card">
+            <img src="images/gantel.png" alt="Набор разборных гантелей до 40 кг" class="product-image">
+            <div class="product-info">
+                <h2>Разборные гантели Expert</h2>
+                <p>Универсальный набор для силовых тренировок</p>
+                <ul>
+                    <li>🏋️ Регулируемый вес 5-40 кг</li>
+                    <li>🔒 Безопасная система фиксации</li>
+                    <li>🛠️ Чугунные диски с резиновым покрытием</li>
+                </ul>
+            </div>
+        </article>
         <article class="product-card">
             <img src="images//jym.png" alt="Домашний спортзал Matrix" class="product-image">
             <div class="product-info">
@@ -178,12 +358,42 @@
             </div>
         </div>
     </section>
+    <section class="feedback-section">
+        <div class="feedback-container">
+            <h2>Обратная связь</h2>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="email">Ваш Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="example@mail.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Сообщение:</label>
+                    <textarea id="message" name="message" rows="5" required
+                        placeholder="Напишите ваш вопрос или предложение..."></textarea>
+                </div>
+
+                <button type="submit" class="cta-button">Отправить сообщение</button>
+            </form>
+        </div>
+    </section>
 
     <footer>
         <div class="social-links">
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-telegram"></i></a>
+            <a href="https://www.instagram.com/jammsster/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://t.me/jammsster" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
         </div>
+
+        <div class="footer-links">
+            <a href="/dostavka.html" title="Условия доставки">Доставка по РБ</a>
+            <a href="/oplata.html" title="Способы оплаты">Оплата</a>
+            <a href="/confidentiality.html" title="Политика конфиденциальности">Конфиденциальность</a>
+            <a href="/sitemap.xml" title="Карта сайта">Карта сайта</a>
+        </div>
+
+        <p>В каталоге вы найдете лучшие <a href="/category/trenazhery" title="Купить тренажеры">тренажеры для дома</a>
+            и профессиональную <a href="/category/ekipirovka" title="Спортивная экипировка">боксерскую экипировку</a>
+            от ведущих брендов</p>
     </footer>
 </body>
 
